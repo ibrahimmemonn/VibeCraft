@@ -20,7 +20,6 @@ export default function Home() {
         alt="cover"
         className="absolute top-[-170px]"
       />
-      <Header />
 
       <main className="flex-1">
         <Hero />
@@ -28,8 +27,6 @@ export default function Home() {
         <FeaturesSection />
         <FAQSection />
       </main>
-
-      <Footer />
     </div>
   );
 }

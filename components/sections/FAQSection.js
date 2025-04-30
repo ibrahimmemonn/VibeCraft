@@ -65,8 +65,13 @@ export default function FAQSection() {
             </div>
             <div className="mb-6 ">
               <h3 className="text-xl font-semibold">Have more questions?</h3>
-              <p className="text-gray-600 mb-4">Book a free discovery call.</p>
-              <Button className="rounded-full bg-black">Book a call</Button>
+              <p className="text-gray-600 mb-4">Connect with me.</p>
+              <Button
+                onClick={() => window.open("mailto:ibii.code@gmail.com")}
+                className="rounded-full bg-black"
+              >
+                Contact
+              </Button>
             </div>
           </motion.div>
 
