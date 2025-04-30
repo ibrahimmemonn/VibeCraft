@@ -13,7 +13,7 @@ const headshotImages = [
 
 export default function Hero() {
   return (
-    <section className="pt-14  text-center px-4">
+    <section className="pt-5  text-center px-4">
       <div className="max-w-4xl mx-auto">
         {/* Trusted by badge */}
         <div className="flex justify-center mb-7">
