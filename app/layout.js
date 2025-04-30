@@ -11,6 +11,12 @@ export const metadata = {
   title: "VibeCraft - Design the Brand Identity Your Business Deserves",
   description:
     "Create beautiful, cohesive brand palettes in seconds with our AI-powered branding generator.",
+  openGraph: {
+    title: "VibeCraft - Design the Brand Identity Your Business Deserves",
+    description:
+      "Create beautiful, cohesive brand palettes in seconds with our AI-powered branding generator.",
+    images: "/opengraph.png",
+  },
   keywords: [
     "branding",
     "design",
