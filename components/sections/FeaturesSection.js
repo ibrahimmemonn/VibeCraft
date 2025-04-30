@@ -24,7 +24,7 @@ export default function FeaturesSection() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl font-bold mb-4">
+          <h2 className="text-5xl font-bold mb-4">
             Create Your Perfect
             <br />
             Brand in Minutes.
@@ -44,7 +44,9 @@ export default function FeaturesSection() {
                 viewport={{ once: true }}
                 className="flex flex-col items-center text-center px-4"
               >
-                <IconComponent />
+                <div className="bg-gray-100 p-3 rounded-3xl">
+                  <IconComponent />
+                </div>
                 <h3 className="text-xl font-semibold my-3">{feature.title}</h3>
                 <p className="text-gray-600 text-sm leading-relaxed">
                   {feature.description}

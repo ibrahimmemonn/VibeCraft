@@ -91,7 +91,7 @@ export default function BrandGenerator() {
 
   return (
     <section className="pb-24 px-4 md:px-8">
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-5xl mx-auto">
         <Image
           src={"/gradient-tool.png"}
           height={1000}
@@ -212,10 +212,10 @@ export default function BrandGenerator() {
                 </p>
               </div>
             ) : (
-              <div className="space-y-6">
+              <div className="space-y-6 ">
                 {/* Typography & Icons Section */}
                 <div className="grid grid-cols-2 gap-4">
-                  <div>
+                  <div className="bg-gray-100 p-3 rounded-md">
                     <div className="flex justify-between items-center mb-2">
                       <span className="text-xs uppercase tracking-wider text-gray-500">
                         Typography
@@ -224,7 +224,7 @@ export default function BrandGenerator() {
                         href={getFontLink()}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-xs flex items-center text-blue-600 hover:text-blue-800"
+                        className="text-xs flex items-center text-black hover:text-gray-800"
                       >
                         <span className="mr-1">Find font</span>
                         <ExternalLink className="h-3 w-3" />
@@ -233,7 +233,7 @@ export default function BrandGenerator() {
                     <p className="font-medium">{branding.font}</p>
                   </div>
 
-                  <div>
+                  <div className="bg-gray-100 p-3 rounded-md">
                     <div className="flex justify-between items-center mb-2">
                       <span className="text-xs uppercase tracking-wider text-gray-500">
                         Icon Style
@@ -242,7 +242,7 @@ export default function BrandGenerator() {
                         href={getIconLink()}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-xs flex items-center text-blue-600 hover:text-blue-800"
+                        className="text-xs flex items-center text-black hover:text-gray-800"
                       >
                         <span className="mr-1">Browse icons</span>
                         <ExternalLink className="h-3 w-3" />
@@ -330,13 +330,6 @@ export default function BrandGenerator() {
                       >
                         This is how your body text would look with these colors.
                       </p>
-                      <a
-                        className="text-sm underline"
-                        style={{ color: branding.colors.accent }}
-                        href="#"
-                      >
-                        Link Example
-                      </a>
                     </div>
 
                     <div className="flex flex-wrap gap-2">
