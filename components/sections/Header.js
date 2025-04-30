@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="py-6 px-8 md:px-12">
+    <header className="py-6 px-8 md:px-12 z-100">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <Link href="/" className="font-bold text-xl">
           VibeCraft

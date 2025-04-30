@@ -97,13 +97,16 @@ export default function BrandGenerator() {
           height={1000}
           width={1000}
           alt="gradient"
-          className="absolute top-[170px]"
+          className="absolute top-[280px]"
           style={{ opacity: 0.5 }}
         />
-        <div className="flex flex-col md:flex-row gap-6 z-10">
+        <div
+          className="flex flex-col md:flex-row gap-3
+         z-10 h-180"
+        >
           {/* Left Card - Form */}
           <motion.div
-            className="flex-1 bg-white p-6 rounded-2xl shadow-sm border border-gray-100 z-10"
+            className="md:w-2/5  bg-white p-6 rounded-2xl shadow-sm border border-gray-100 z-13"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4 }}
@@ -198,7 +201,7 @@ export default function BrandGenerator() {
 
           {/* Right Card - Brand Palette */}
           <motion.div
-            className="flex-1 bg-white p-6 rounded-2xl shadow-sm border border-gray-100 z-10"
+            className="md:w-4/5 bg-white p-6 rounded-2xl shadow-sm border border-gray-100 z-10"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, delay: 0.1 }}

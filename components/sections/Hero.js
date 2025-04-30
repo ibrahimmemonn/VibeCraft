@@ -13,11 +13,16 @@ const headshotImages = [
 
 export default function Hero() {
   return (
-    <section className="pt-8  text-center px-4">
+    <section className="pt-14  text-center px-4">
       <div className="max-w-4xl mx-auto">
         {/* Trusted by badge */}
         <div className="flex justify-center mb-7">
-          <div className="rounded-full px-4 inline-flex items-center space-x-2">
+          <motion.div
+            className="rounded-full px-4 inline-flex items-center space-x-2"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+          >
             <div className="flex -space-x-3">
               {headshotImages.map((i) => (
                 <Image
@@ -47,13 +52,13 @@ export default function Hero() {
                 Trusted by 20+ professionals & founders
               </span>
             </div>
-          </div>
+          </motion.div>
         </div>
 
         {/* Main heading */}
         <div className="relative w-fit mx-auto text-center">
           <motion.h1
-            className="text-5xl md:text-6xl font-bold"
+            className="text-5xl md:text-7xl font-semibold tracking-tight"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -63,14 +68,19 @@ export default function Hero() {
             Your Brand Deserves.
           </motion.h1>
 
-          <div className="flex justify-end">
+          <motion.div
+            className="flex justify-end"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+          >
             <Image
               src="/line.png"
               height={50}
               width={200}
               alt="line under text"
             />
-          </div>
+          </motion.div>
         </div>
 
         {/* Subheading */}
