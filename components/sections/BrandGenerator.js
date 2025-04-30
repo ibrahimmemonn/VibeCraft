@@ -90,23 +90,20 @@ export default function BrandGenerator() {
   const isFormComplete = Object.values(form).every((value) => value !== "");
 
   return (
-    <section className="pb-24 px-4 md:px-8">
-      <div className="max-w-5xl mx-auto">
+    <section className="relative  px-4 md:px-8 mb-20">
+      <div className="max-w-5xl mx-auto relative">
         <Image
           src={"/gradient-tool.png"}
           height={1000}
           width={1000}
           alt="gradient"
-          className="absolute top-[280px]"
+          className="absolute top-[-200px] -z-10"
           style={{ opacity: 0.5 }}
         />
-        <div
-          className="flex flex-col md:flex-row gap-3
-         z-10 h-180"
-        >
+        <div className="flex flex-col md:flex-row gap-3 relative">
           {/* Left Card - Form */}
           <motion.div
-            className="md:w-2/5  bg-white p-6 rounded-2xl shadow-sm border border-gray-100 z-13"
+            className="md:w-2/5 bg-white p-6 rounded-2xl shadow-sm border border-gray-100"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4 }}
@@ -201,7 +198,7 @@ export default function BrandGenerator() {
 
           {/* Right Card - Brand Palette */}
           <motion.div
-            className="md:w-4/5 bg-white p-6 rounded-2xl shadow-sm border border-gray-100 z-10"
+            className="md:w-4/5 bg-white p-6 rounded-2xl shadow-sm border border-gray-100"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, delay: 0.1 }}
