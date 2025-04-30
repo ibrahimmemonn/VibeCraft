@@ -1,36 +1,116 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# VibeCraft - Brand Identity Generator
+
+VibeCraft is an modern web application that helps you generate beautiful and cohesive brand identities in seconds. This project is built with Next.js and uses Tailwind CSS for styling.
+
+## Features
+
+- Interactive brand generator with style, category, and audience selection
+- Real-time color palette generation
+- Font and icon recommendations based on brand style
+- Preview of brand elements including typography, buttons, and colors
+- Copy and export functionality
+- Responsive design for all devices
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 18.0.0 or newer
+- npm or yarn package manager
+
+### Installation
+
+1. Clone the repository:
+
+```bash
+git clone [repository-url]
+cd vibecraft
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Run the development server:
 
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+vibecraft/
+├── app/                    # Next.js App Router
+│   ├── layout.js           # Root layout
+│   ├── page.js             # Home page
+│   └── globals.css         # Global styles
+├── components/             # React components
+│   ├── sections/           # Page sections
+│   │   ├── Header.js       # Header component
+│   │   ├── Hero.js         # Hero section
+│   │   ├── BrandGenerator.js # Brand generator component
+│   │   ├── FeaturesSection.js # Features section
+│   │   ├── FAQSection.js   # FAQ section
+│   │   └── Footer.js       # Footer component
+│   └── ui/                 # UI components
+│       ├── button.js       # Button component
+│       └── select.js       # Select component
+├── lib/                    # Utility functions and constants
+│   ├── constants.js        # Application constants
+│   └── utils.js            # Utility functions
+├── public/                 # Static assets
+├── styles/                 # Additional styles (if needed)
+├── package.json            # Project dependencies
+├── tailwind.config.js      # Tailwind CSS configuration
+└── next.config.js          # Next.js configuration
+```
 
-## Learn More
+## Customization
 
-To learn more about Next.js, take a look at the following resources:
+### Adding New Color Themes
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To add new color themes, update the `COLOR_THEMES` object in `lib/constants.js`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Adding New Font Options
 
-## Deploy on Vercel
+To add new font options, update the `FONT_MAP` object in `lib/constants.js`.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Adding New Icon Sets
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+To add new icon sets, update the `ICON_MAP` object in `lib/constants.js`.
+
+## Deployment
+
+This Next.js application can be deployed to platforms like Vercel, Netlify, or any other hosting service that supports Next.js.
+
+```bash
+# Build for production
+npm run build
+# or
+yarn build
+
+# Start production server
+npm start
+# or
+yarn start
+```
+
+## License
+
+This project is licensed under the MIT License.
+
+## Acknowledgements
+
+- [Next.js](https://nextjs.org/) - The React framework used
+- [Tailwind CSS](https://tailwindcss.com/) - For styling
+- [Lucide React](https://lucide.dev/) - For icons
+- [Framer Motion](https://www.framer.com/motion/) - For animations
